@@ -1,0 +1,68 @@
+h1 {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  border: 10px solid rgb(179, 17, 17);
+  font-size: 100px;
+  text-align: center;
+  color: rgb(179, 17, 17);
+  animation: fadeMovie 3s ease-in-out infinite;
+}
+
+@keyframes fadeMovie {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+h2 {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    border: 5px solid black;
+    font-size: 50px;
+}
+
+#main {
+    font-family: "metal mania", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  border: 5px solid black;
+}
+
+#nav {
+    font-family: "metal mania", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  border: 5px solid black;
+}
+
+#demon-img {
+  width: 600px;
+  border: 5px solid rgb(179, 17, 17);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(179, 17, 17, 0.7);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+    animation: gifborder 2s infinite alternate;
+}
+
+
+#demon-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.9);
+}
+
+@keyframes gifborder {
+    from {
+        border: 5px solid rgb(179, 17, 17);
+        border-color: rgb(179, 17, 17);
+    }
+    to {
+        border: 15px solid rgb(255, 0, 0);
+        border-color: rgb(255, 0, 0);
+    }
+  }
+  

@@ -1,0 +1,22 @@
+h1 {
+  font-family: "Metal Mania", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    border: 1px solid black;
+    font-size: 100px;
+}
+
+#main {
+    font-family: "metal mania", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  border: 1px solid black;
+}
+
+#nav {
+    font-family: "metal mania", system-ui;
+  font-weight: 100;
+  font-style: normal;
+  border: 1px solid black;
+}
+
