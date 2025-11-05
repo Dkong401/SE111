@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Basics</title>
+</head>
+<body>
+  <h1>Welcome to JavaScript Basics</h1>
+  <p>This is a simple HTML template for learning JavaScript.</p>
+
+  <script>
+   
+    // Basic Output Examples
+   
+    console.log("Hello, World!");
+    alert("Welcome to JavaScript Basics!");
+    document.write("Hello, World!");
+
+    // Variables and Arithmetic
+   
+    var x = 5;
+    var y = 10;
+    var z = x + y;
+
+    console.log("The sum of x and y is: " + z);
+    document.write("<br>The sum of x and y is: " + z);
+
+    // Conditional / Logical Demo
+  
+    var a = 15;
+    var b = 20;
+
+    if (a < b && b > 10) {
+      console.log("a is less than b and b is greater than 10");
+      document.write("<br>a is less than b and b is greater than 10");
+    }
+
+  
+    var c = 10;
+    c++; // Increment
+    console.log("Value of c after increment: " + c);
+    c--; // Decrement
+    console.log("Value of c after decrement: " + c);
+
+
+   
+
+    function greet(name) {
+      return "Hello, " + name + "!";
+    }
+    console.log(greet("David"));
+    document.write("<br>" + greet("David"));
+
+
+   
+    var userName = prompt("Please enter your name:");
+    alert(userName + ", you aren't allowed to enter this site.");
+
+
+    // Calculator
+  
+    function calculator(num1, num2, operator) {
+      var numOne = Number(num1);
+      var numTwo = Number(num2);
+
+
+
+      if (operator === "+") {
+        return numOne + numTwo;
+      } else if (operator === "-") {
+        return numOne - numTwo;
+      } else if (operator === "*") {
+        return numOne * numTwo;
+      } else if (operator === "/") {
+        return numOne / numTwo;
+      } else {
+        return "Error";
+      }
+    }
+    alert("There is no idiot check in this calculator. be smart!");
+    var n1 = prompt("Enter the first number:");
+    var n2 = prompt("Enter the second number:");
+    var op = prompt("Enter the operator (+, -, *, /):");
+
+    var result = calculator(n1, n2, op);
+    alert("The result is: " + result);
+  </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="David Kong">
+  <title>Birthday Party Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Birthday Party Registration Form</h1>
+
+  <form action="confirm.html" method="get">
+    <table>
+      <thead>
+        <tr>
+            <th>Labels</th>
+            <th>Form Fields</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><label for="g-first">Parent/Guardian Name</label></td>
+          <td>
+            <input type="text" name="gfirst" id="g-first" required maxlength="20" placeholder="First Name"><br>
+            <input type="text" name="glast" id="g-last" required maxlength="20" placeholder="Last Name">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="c-first">Child's First Name</label></td>
+          <td>
+            <input type="text" name="cfirst" id="c-first" required placeholder="Child's First Name">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="age">Child's Age</label></td>
+          <td>
+            <input type="number" name="age" id="age" required value="3">
+          </td>
+        </tr>
+
+        <tr>
+          <th>Date and Time</th>
+          <th></th>
+         
+        </tr>
+
+        <tr>
+          <td><label for="date">Date</label></td>
+          <td>
+            <input type="date" name="date" id="date" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="time">Start Time</label></td>
+          <td>
+            <input type="time" name="time" id="time" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="guests">Number of Guests</label></td>
+          <td>
+            <input type="number" name="guests" id="guests" required value="5">
+          </td>
+        </tr>
+
+        <tr>
+          <th>Food</th>
+          <th></th>
+  
+        </tr>
+
+        <tr>
+          <td><label for="size">Size</label></td>
+          <td>
+            <input type="radio" name="size" id="sm" value="sm" required> sm
+            <input type="radio" name="size" id="md" value="md"> md
+            <input type="radio" name="size" id="lg" value="lg"> lg
+          </td>
+        </tr>
+
+        <tr>
+          <td>Drinks</td>
+          <td>
+            <input type="checkbox" name="drink1" id="coke" value="coke"><label for="drink1"> Coke</label><br>
+            <input type="checkbox" name="drink2" id="sprite" value="sprite"><label for="drink2"> Sprite</label><br>
+            <input type="checkbox" name="drink3" id="fruitpunch" value="fruit punch"><label for="drink3"> Fruit punch</label><br>
+            <input type="checkbox" name="drink4" id="lemonade" value="lemonade"><label for="drink4"> Lemonade</label><br>
+            <input type="checkbox" name="drink5" id="icedtea" value="iced tea"><label for="drink5"> Iced Tea</label>
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="cake">Cake</label></td>
+          <td>
+            <select name="cake" id="cake">
+              <option value="Chocolate" selected>Chocolate</option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="Confetti">Confetti</option>
+              <option value="Marble">Marble</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Decorations</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td><label for="colors">Color Scheme</label></td>
+          <td>
+            <input type="color" name="colors" id="colors">
+          </td>
+        </tr>
+
+        <tr>
+          <td><label for="comments">Additional Comments</label></td>
+          <td>
+            <textarea name="comments" id="comments" rows="4" cols="30" placeholder="Please add any additional comments here"></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="submit">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+</body>
+</html>

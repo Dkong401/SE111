@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Basics</title>
+</head>
+<body>
+  <h1>Welcome to JavaScript Basics</h1>
+  <p>This is a simple HTML template for learning JavaScript.</p>
+
+  <script>
+
+    // Calculator
+  
+    function calculator(num1, num2, operator) {
+      var numOne = Number(num1);
+      var numTwo = Number(num2);
+
+
+
+      if (operator === "+") {
+        return numOne + numTwo;
+      } else if (operator === "-") {
+        return numOne - numTwo;
+      } else if (operator === "*") {
+        return numOne * numTwo;
+      } else if (operator === "/") {
+        return numOne / numTwo;
+      } else {
+        return "Error";
+      }
+    }
+    alert("There is no idiot check in this calculator. be smart!");
+    var n1 = prompt("Enter the first number:");
+    var n2 = prompt("Enter the second number:");
+    var op = prompt("Enter the operator (+, -, *, /):");
+
+    var result = calculator(n1, n2, op);
+    alert("The result is: " + result);
+  </script>
+</body>
+</html>
