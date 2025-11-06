@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Pay</title>
+</head>
+<body>
+    
+    <a id="payCal">Calculate Pay</a>
+    <script>
+    // prompt()
+    alert("This will calculate your bi-weekly pay after taxes.");
+    var payRate = Number(prompt("Enter your hourly pay rate"));
+    var hoursWorked = Number(prompt("Enter your weekly hours"));
+    var taxRate = Number(prompt("Enter your tax rate"));
+
+    // Calulations
+    var grossPay = payRate * hoursWorked * 2;
+    var uncleSamShare = grossPay * (taxRate / 100);
+    var netPay = grossPay - uncleSamShare;
+
+    // output results 
+    console.log("Gross Pay: $" + grossPay);
+    console.log("Uncle Sam's Share: $" + uncleSamShare);
+    console.log("Net Pay: $" + netPay);
+
+    //Alert results
+    alert(
+      "Gross Pay: $" + grossPay + "\n" +
+      "Uncle Sam's Share: $" + uncleSamShare + "\n" +
+      "Net Pay: $" + netPay
+    );
+
+    console.log("Gross Pay: $" + grossPay + "\n" +
+      "Uncle Sam's Share: $" + uncleSamShare + "\n" +
+      "Net Pay: $" + netPay
+    );
+
+    document.getElementById("payCal").innerHTML =
+      "Gross Pay: $" + grossPay + "<br>" +
+      "Uncle Sam's Share: $" + uncleSamShare + "<br>" +
+      "Net Pay: $" + netPay;
+
+
+  </script>
+</body>
+</html>
